@@ -32,6 +32,24 @@ namespace ScummEditor
                 return result;
             }
 
+            indexPath = Path.Combine(path, "COMI.LA0");
+            // dataPath = Path.Combine(path, "COMI.LA1");
+            // dataPath = Path.Combine(path, "COMI.LA2");
+            if (File.Exists(indexPath) && File.Exists(dataPath))
+            {
+                result = new GameInfo
+                {
+                    LoadedGame = ScummGame.CurseOfMonkeyIsland,
+                    IndexFile = indexPath,
+                    DataFile = dataPath,
+                    Xored = false,
+                    XorKey = 0x0,
+                    ScummVersion = 8
+                };
+
+                return result;
+            }
+
             indexPath = Path.Combine(path, "SAMNMAX.000");
             dataPath = Path.Combine(path, "SAMNMAX.001");
             if (File.Exists(indexPath) && File.Exists(dataPath))

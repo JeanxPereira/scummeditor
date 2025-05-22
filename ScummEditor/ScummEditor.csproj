@@ -253,6 +253,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Structures\DataFile\ZPlane.cs" />
+    <Compile Include="Structures\IndexFile\DirectoryOfRoomScripts.cs" />
     <Compile Include="Structures\IBinaryPersistence.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfArrays.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfCharsets.cs" />
@@ -260,11 +261,13 @@
     <Compile Include="Structures\IndexFile\DirectoryOfItems.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfObjects.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfRooms.cs" />
+    <Compile Include="Structures\IndexFile\DirectoryOfRoomsV8.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfScripts.cs" />
     <Compile Include="Structures\IndexFile\DirectoryOfSounds.cs" />
     <Compile Include="Structures\IndexFile\MaximumValues.cs" />
     <Compile Include="Structures\IndexFile\DirectoryItem.cs" />
     <Compile Include="Structures\IndexFile\RoomNamesV6.cs" />
+    <Compile Include="Structures\IndexFile\ScummV8IndexFile.cs" />
     <Compile Include="Structures\ScummV6GameData.cs" />
     <Compile Include="Structures\IndexFile\ScummV6IndexFile.cs" />
     <Compile Include="Structures\BlockBase.cs" />
@@ -412,7 +415,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" />
+      <UserProperties BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
